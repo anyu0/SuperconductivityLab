@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+	\begin{center}
+    
+    	% MAKE SURE YOU TAKE OUT THE SQUARE BRACKETS
+    
+		\LARGE{\textbf{Lab 2: Superconductivity}} \\
+        \vspace{1em}
+        \Large{Research Plan} \\
+        \vspace{1em}
+        \normalsize\textbf{Angela Wang} \\
+        \normalsize{aw3062@columbia.edu} \\
+        \vspace{1em}
+        \normalsize\textbf{Henry Xing} \\
+        \normalsize{hx2209@columbia.edu}\\
+        \vspace{1em}
+        \normalsize{Columbia University} 
+	\end{center}
+    \begin{normalsize}
+    
+    	\section{Objectives}
+        
+        The objective of this lab is to look at the superconducting properties of different materials from conductors which are ferromagnetic or paramagnetic, to semiconductors with various band gaps. We will attempt at explaining our obervation on transition temperature, Debye temperature, and electron transition.  
+      
+		\section{Relavant Theories}
+        
+       Superconductivity was discovered in 1911 by Kamerlingh Onnes in Leiden. The basic observation was the disappearance of electrical resistance of various metals (mercury, lead and thin) in a very small range of temperatures around a critical temperature $T_c$ characteristic of the material. The Drude model predicts that conductivity should be proportional to $n$ and $\tau$ under DC current.
+       \begin{equation*}
+           \sigma_{DC}=\frac{nq^2\tau}{m}
+       \end{equation*}
+       where $n$ depends on the Fermi ball radius of the material,
+       \begin{equation*}
+           n=\frac{8\pi p^3_F}{3h^3}
+       \end{equation*}
+       and $\tau$ depends on the terperature.
+       \begin{equation*}
+           \frac{1}{\tau_{total}}=\frac{1}{\tau_{impurity}}+\frac{1}{\tau_{other}}
+       \end{equation*}
+       $\tau$ can be calculated by the Bloch-Grüneisen model, which predicts the resistivity as a function of temperature
+       \begin{equation*}
+           \frac{1}{\tau}=v_F \sigma_a \frac{\hbar^2 q_D^2 k_B}{M_a k_B^2 \Theta_D}(\frac{T}{\Theta_D})^5 \int^{\frac{\Theta_D}{T}}_0\frac{4z^5dz}{(e^z-1)(1-e^{-z})}
+       \end{equation*}
+       Note that the Debye temperature $\Theta_D$ is the temperature of a crystal's highest normal mode of vibration.
+        
+	   	\section{Approach and Expected Outcomes}
+        
+      The superdonducting wire is supposed to exhibit a distinct transition temperature, which can be found by plotting the resistence against temperature. This is contrasted with non-superconductors whose R-T cureve tends to be smooth.\\
+      The Debye temperature is experimentally determined by tracking the temperature profile of the Pt sample, and calculating from the heat taken in for the change of the crystal's virbration mode. The literature value of Pt's Debye temperature ranges from 237K to 225K.
+        
+    	\section{Timeline}
+        \begin{itemize}
+\item (4/1) Measure the temperature dependence of resistivity of the superconducting wire under different magnetic fields. Find its transition temperature.
+\item(4/8) Measure the temperature dependence of resistivity of a sample of Pt under different magnetic fields. 
+\item(4/15) Find and fit for the Debye temperature of the Pt sample
+\item Measure the temperature dependence of resistivity of a sample of diode, and determine the band gap of the semiconductor.
+\item Measure the temperature dependence of resistivity of the sample Ni under different magnetic fields. Find the critical temperature by identifying anomality in the graph.
+
+        \end{itemize}
+        
+    	\section{Future Work}
+        We could study the dependence of conductivity on fields by fixing the temperature and applying rotating magnetic field to the sample. We can also look at the crystal properties that could contribute to the difference in transition temperature.
+\end{normalsize}
+  
+\end{document}
+
